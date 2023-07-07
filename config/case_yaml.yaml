@@ -1,0 +1,9 @@
+"test_success" :
+  - ["admin","123456","admin"]
+  - ["lVRIjg","123456","王驰"]
+  - ["VDOPuo","123456","王驰"]
+
+"test_fail" :
+  - ["","123456","x,/html/body/div[2]/div/div/div[1]/div","登录失败，请检查您的成员名或密码是否填写正确。"]
+  - ["admin12","13456","x,/html/body/div[2]/div/div/div[1]/div","登录失败，请检查您的成员名或密码是否填写正确。"]
+  - ["VDOPuo","12356","x,/html/body/div[2]/div/div/div[1]/div","登录失败，请检查您的成员名或密码是否填写正确。"]

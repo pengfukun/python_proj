@@ -1,0 +1,145 @@
+{
+  "test_success": [
+    [
+      "admin",
+      "123456",
+      "admin",
+      "x,//*[@id='mainNavbar']/div/ul[1]/li/a",
+      1
+    ],
+    [
+      "user2",
+      "123456",
+      "王驰",
+      "x,//*[@id='mainNavbar']/div/ul[1]/li/a",
+      2
+    ],
+    [
+      "user1",
+      "123456",
+      "古董1",
+      "x,//*[@id='mainNavbar']/div/ul[1]/li/a",
+      3
+    ]
+  ],
+  "test_fail": [
+    [
+      "",
+      "123456",
+      "x,/html/body/div[2]/div/div/div[1]/div",
+      "登录失败，请检查您的成员名或密码是否填写正确。",
+      4
+    ],
+    [
+      "admin12",
+      "13456",
+      "x,/html/body/div[2]/div/div/div[1]/div",
+      "登录失败，请检查您的成员名或密码是否填写正确。",
+      5
+    ],
+    [
+      "VDOPuo",
+      "12356",
+      "x,/html/body/div[2]/div/div/div[1]/div",
+      "登录失败，请检查您的成员名或密码是否填写正确。",
+      6
+    ]
+  ],
+  "test_addsuccess": [
+    [
+      "user1",
+      "彭福锟",
+      "genderm",
+      "0",
+      "dev",
+      "123456",
+      "123456",
+      "123@qq.com",
+      "css,body > div > div > div > div.col-md-10 > div > div > table > tbody > tr:last-child > td:nth-child(3)",
+      1
+    ],
+    [
+      "user2",
+      "张三",
+      "genderf",
+      "0",
+      "dev",
+      "123456",
+      "123456",
+      "1232@qq.com",
+      "css,body > div > div > div > div.col-md-10 > div > div > table > tbody > tr:last-child > td:nth-child(3)",
+      2
+    ]
+  ],
+  "test_addfail": [
+    [
+      "user1",
+      "彭福锟",
+      "genderm",
+      "0",
+      "dev",
+      "123456",
+      "123456",
+      "1233@qq.com",
+      "用户名已经有",
+      "x,//*[@id='accountLabel']",
+      1
+    ],
+    [
+      "user3",
+      "彭福",
+      "genderm",
+      "0",
+      "dev",
+      "123456",
+      "123456",
+      "1232@qq.com",
+      "aa",
+      "x,//*[@id='emailLabel']",
+      2
+    ]
+  ],
+  "test_addfile_success": [
+    [
+      "custom",
+      "wode wendang",
+      "a",
+      "x,//*[@id='treebox']/div[1]",
+      1
+    ],
+    [
+      "custom",
+      "wode wendang1",
+      "private",
+      "x,//*[@id='treebox']/div[1]",
+      2
+    ]
+  ],
+  "test_addfile_fail": [
+    [
+      "custom",
+      "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "a",
+      "i,nameLabel",
+      "name长度应当不超过60，且不小于0。",
+      1
+    ],
+    [
+      "custom",
+      "",
+      "private",
+      "i,nameLabel",
+      "name不能为空。",
+      2
+    ]
+  ],
+  "add_linkfile_success": [
+    ["0",1,"url","静夜思","窗前明月光","月光","李白","c:\\login.xlsx","诗歌","c:\\login.xlsx","诗歌2","css,#docList > tbody > tr:first-child > td.text-left",1,"rc:\\asd"],
+    ["0",1,"a","静夜思1","窗前明月光","月光","李白","c:\\login.xlsx","诗歌","c:\\login.xlsx","诗歌2","css,#docList > tbody > tr:first-child > td.text-left",2,"rc:\\asd"]
+  ],
+   "add_linkfile_fail": [
+    ["0",1,"url","","窗前明月光","月光","李白","c:\\login.xlsx","诗歌","c:\\login.xlsx","诗歌2","文档标题不能为空。","x,//*[@id='titleLabel']",1,"rc:\\asd"],
+    ["0",1,"ural","静夜思1静夜思1静夜思1静夜思1静夜思1静夜思1静夜静夜思1静夜思1静夜思1静夜思1静夜思1静夜思1静夜思1静夜思1静夜思1静夜思1静夜思1静夜思1静夜静夜思1静夜思1静夜思1静夜思1静夜思1静夜思1静夜思1静夜思1静夜思1静夜思1静夜思1静夜思1静夜静夜思1静夜思1静夜思1静夜思1静夜思1静夜思1静夜思1静夜思1静夜思1静夜思1静夜思1静夜思1静夜思1静夜思1静夜思1静夜思1静夜思1静夜思1静夜思1静夜思1静夜思1静夜思1静夜思1静夜思1静夜思1静夜思1静夜思1静夜思1静夜思1静夜思1静夜思1静夜思1静夜思1静夜思1静夜思1静夜思1静夜思1静夜思1静夜思1静夜思1",
+      "窗前明月光","月光","李白","c:\\login.xlsx","诗歌","c:\\login.xlsx","诗歌2","文档标题长度应当不超过255，且不小于0。","x,//*[@id='titleLabel']",2,"rc:\\asd"]
+  ]
+}

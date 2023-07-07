@@ -1,0 +1,4 @@
+Login:
+  USERNAME: 'i,account'
+  PWD: 'i,password'
+  BUTTON: 'i,submit'
